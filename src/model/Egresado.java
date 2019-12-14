@@ -38,7 +38,7 @@ public class Egresado implements Serializable {
 	}
 	
 	public Egresado(String documento, String nombre, String telefono, String email
-			, String codigo, String clave, int programa) {
+			, String codigo, String clave, int programa, String perfil) {
 		this.documento = documento;
 		this.nombre = nombre;
 		this.telefono = telefono;
@@ -46,6 +46,7 @@ public class Egresado implements Serializable {
 		this.codigo = codigo;
 		this.clave = clave;
 		this.programa = programa;
+		this.perfil = perfil;
 	}
 
 	public int getId() {

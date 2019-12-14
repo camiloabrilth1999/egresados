@@ -5,93 +5,101 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-	crossorigin="anonymous"></script>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+
+<title>Registrar</title>
+<%@include file="../html/meta.html"%>
 </head>
 
 <body>
 
-<%@include file="../html/header.html" %>
-<%@include file="../html/nav.html" %>
+	<%@include file="../html/header.html"%>
+	<%@include file="../html/nav.html"%>
 	<jsp:useBean id="ppDao" class="dao.ProgramaDao" scope="request"></jsp:useBean>
 
+
 	<div class="container">
-		<form action="../SignUpController" method="post">
+		<div class="card col-11 col-sm-4 mx-auto">
+			<h2 class="h4 mb-4">Registrar egresado</h2>
 
-			<div class="row">
-				<div class="form-group col-md-3">
-					<label for="documento">Documento</label> <input type="text"
-						class="form-control" name="documento" placeholder="1090537651"
-						required>
+			<form action="../SignUpController" method="post">
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="documento">Documento</label> <input type="text"
+							class="form-control" name="documento" placeholder="1090537651"
+							required>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="form-group col-md-3">
-					<label for="nombre">Nombre</label><input type="text"
-						class="form-control" name="nombre" placeholder="Camilo Obando"
-						required>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="nombre">Nombre</label><input type="text"
+							class="form-control" name="nombre" placeholder="Camilo Obando"
+							required>
+					</div>
 				</div>
-			</div>
 
 
-			<div class="row">
-				<div class="form-group col-md-3">
-					<label for="telefono">Telefono</label><input type="text"
-						class="form-control" name="telefono" placeholder="3187659876"
-						required>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="telefono">Telefono</label><input type="text"
+							class="form-control" name="telefono" placeholder="3187659876"
+							required>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="form-group col-md-3">
-					<label for="email">Email</label><input type="email"
-						class="form-control" name="email"
-						placeholder="ejemplo@ejemplo.com" required>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="email">Email</label><input type="email"
+							class="form-control" name="email"
+							placeholder="ejemplo@ejemplo.com" required>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="form-group col-md-3">
-					<label for="codigo">Codigo</label><input type="text"
-						class="form-control" name="codigo" placeholder="1151493" required>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="codigo">Codigo</label><input type="text"
+							class="form-control" name="codigo" placeholder="1151493" required>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="form-group col-md-3">
-					<label for="clave">Clave</label><input type="password"
-						class="form-control" name="clave" placeholder="******" required>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="clave">Clave</label><input type="password"
+							class="form-control" name="clave" placeholder="******" required>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="form-group col-md-3">
-					<label for="programa">Programa</label> <select name="programa"><br>
-						<c:forEach var="p" items="${ppDao.list()}">
-							<option value="${p.codigo}">${p.nombre}</option>
-						</c:forEach>
-					</select>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="programa">Programa</label> <select name="programa"><br>
+							<c:forEach var="p" items="${ppDao.list()}">
+								<option value="${p.codigo}">${p.nombre}</option>
+							</c:forEach>
+						</select>
+					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col-md-6">
-					<button type="submit" class="btn btn-primary">Registrate
-						ahora</button>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="perfil">Perfil</label><input type="text"
+							class="form-control" name="perfil" placeholder="Tu perfil..." required>
+					</div>
 				</div>
-			</div>
 
-		</form>
+				<div class="row">
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-primary">Registrate
+							ahora</button>
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+		<%@include file="../html/footer.html"%>
 	</div>
+
 </body>
 </html>
