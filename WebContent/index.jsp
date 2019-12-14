@@ -100,23 +100,13 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12 center-align">
-                    <h5 class="white-text">JACKS'S NANA | HOTEL & RESORT</h5>
-                    <p class="grey-text text-lighten-4">Contamos con seis hoteles y dos resort, cada una con 72
-                        habitaciones cómodamente equipadas, incluyendo dos suites: La Suite Presidente y la Suite
-                        Ambassador con más de cien metros de superficie, que seguramente sorprenderán incluso a los
-                        huéspedes más exigentes. Disponemos de 7 salas, donde llevamos ya 15 años preparando reuniones
-                        familiares y de negocios.
+                    <h5 class="white-text">Egresados UFPS</h5>
+                    <p class="grey-text text-lighten-4">Aqui podras guardar tu hoja y compartir tu experiencia laboral con los demas profesionales graduados de la UFPS
+                    Compartir experiencias y conocer mas acerca de ellos
+                    Oportunidades laborales y gente muy bien capacitada
                         <br>
-                        JACKS'S NANA no es sólo el edificio sino, sobre todo, su gente. Somos un equipo de
-                        profesionales, que podemos organizar todos los eventos de principio a fin.</p>
+                        Egresados UFPS.</p>
 
-                </div>
-                <div class="col l6 s12">
-                    <div class="map-responsive">
-                        <iframe
-                            src="www.divisist.ufps.edu.co"
-                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
                 </div>
             </div>
         </div>
