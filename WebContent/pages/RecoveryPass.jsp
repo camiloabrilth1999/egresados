@@ -17,7 +17,7 @@
 
 
 			<div class="card col-11 col-sm-4 margin mx-auto">
-				<form action="RecoveryPassController" method="post">
+				<form action="../RecoveryPassController" method="post">
 					<fieldset>
 						<legend>Ingresa Tu Usuario</legend>
 
