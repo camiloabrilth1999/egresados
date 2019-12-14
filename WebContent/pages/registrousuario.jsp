@@ -22,7 +22,7 @@
 </head>
 
 <body>
-	<jsp:useBean id="tcDao" class="model.Programa" scope="request"></jsp:useBean>
+	<jsp:useBean id="ppDao" class="dao.ProgramaDao" scope="request"></jsp:useBean>
 	<header>
 		<div class="navbar-fixed">
 			<nav>
@@ -61,15 +61,13 @@
 						action="RegistrarUsuarioController" runat="server">
 
 						<div class="input-field">
-							<i class="material-icons prefix"></i> <label
-								for="usuario">Ususario</label> <input type="text" name="usuario"
-								required>
+							<i class="material-icons prefix"></i> <label for="usuario">Ususario</label>
+							<input type="text" name="usuario" required>
 						</div>
 
 						<div class="input-field">
-							<i class="material-icons prefix"></i> <label
-								for="nombre">Nombre</label> <input type="text" name="nombre"
-								required>
+							<i class="material-icons prefix"></i> <label for="nombre">Nombre</label>
+							<input type="text" name="nombre" required>
 						</div>
 
 						<div class="input-field">
@@ -82,7 +80,15 @@
 							<input type="email" name="email" required>
 						</div>
 
-						
+						<div class="row">
+							<div class="form-group col-md-3">
+								<label for="programa">Programa</label> <select name="programa"><br>
+									<c:forEach var="p" items="${ppDao.list()}">
+										<option value="${p.codigo}">${p.nombre}</option>
+									</c:forEach>
+								</select>
+							</div>
+						</div>
 
 
 						<p class="center-align">
@@ -94,11 +100,11 @@
 
 					</form>
 					<p class="center-align">
-							<button class="waves-effect waves-light btn teal darken-4"
-								type="submit">
-								<i class="material-icons left">arrow_back</i>VOLVER
-							</button>
-						</p>
+						<button class="waves-effect waves-light btn teal darken-4"
+							type="submit">
+							<i class="material-icons left">arrow_back</i>VOLVER
+						</button>
+					</p>
 
 				</article>
 			</div>

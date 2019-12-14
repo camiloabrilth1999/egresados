@@ -69,6 +69,13 @@
                 <a href="">Registrate</a>
             </p> -->
 			</form>
+
+			<ul class="right hide-on-med-and-down">
+				<li><a href="signUp.jsp"
+					class="waves-effect waves-light btn indigo darken-3">Registrarse
+						<i class="material-icons right">supervised_user_circle </i>
+				</a></li>
+			</ul>
 		</div>
 
 
