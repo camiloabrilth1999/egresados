@@ -49,10 +49,14 @@
 				</div>
 
 				<div class="d-flex justify-content-around">
-
+					
 					<div>
 						<!-- Forgot password -->
-						<a href="signUp.jsp">¿No tienes cuenta? Registrate ahora</a>
+						<a href="signUp.jsp"> Registrar Egresado</a>
+					</div>
+					<div>
+						<!-- Forgot password -->
+						<a href="registrousuario.jsp">Registrar Usuario</a>
 					</div>
 				</div>
 				<!-- Sign in button -->
