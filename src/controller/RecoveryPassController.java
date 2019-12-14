@@ -50,10 +50,11 @@ public class RecoveryPassController extends HttpServlet {
 		if(tipoUsuario.equals("EGRESADO")) {
 			Egresado e = new Egresado();
 			EgresadoDao eDao = new EgresadoDao();
-			e = eDao.find(Integer.parseInt(request.getParameter(request.getParameter("id"))));
+			e = eDao.find(Integer.parseInt(request.getParameter("id")));
 			if(clave1.equals(clave2)) {
 				e.setClave(clave1);
 				eDao.update(e);
+				response.sendRedirect(request.getContextPath() + "/pages/principal.jsp");
 			}else {
 				sesion.setAttribute("error_msg", "Las claves no coinciden");
 				response.sendRedirect(request.getContextPath() + "/pages/ErrorPage.jsp");
@@ -92,11 +93,11 @@ public class RecoveryPassController extends HttpServlet {
 			if(tipoUsuario.equals("EGRESADO")) {
 				Egresado e = new Egresado();
 				EgresadoDao eDao = new EgresadoDao();
-				e = eDao.find(Integer.parseInt(request.getParameter("codigo")));
+				e = eDao.find(Integer.parseInt(request.getParameter("id")));
 				
 				if(e!=null) {
 					ServicioEmail sEmail = new ServicioEmail("jefersonurielhc@ufps.edu.co", "dvhawulugeuevjee");
-					sEmail.enviarEmail(e.getEmail(), "asunto", "mensaje "
+					sEmail.enviarEmail(e.getEmail(), "Egresados UFPS Recuperacion Clave", "Has solicitado un cambio de clave has click en el siguiente enlace "
 							+ "localhost:8080/egresados" + "/pages/CambiarClaveEgresado.jsp");
 					
 				}else {
@@ -112,7 +113,7 @@ public class RecoveryPassController extends HttpServlet {
 				u = uDao.find(u.getUsuario());
 				if(u!=null) {
 					util.ServicioEmail sEmail = new util.ServicioEmail("jefersonurielhc@ufps.edu.co", "dvhawulugeuevjee");
-					sEmail.enviarEmail(u.getEmail(), "asunto", "mensaje "
+					sEmail.enviarEmail(u.getEmail(), "Egresados UFPS Recuperacion Clave", "mensaje "
 							+ "localhost:8080/egresados" + "/CambiarClaveUsuario.jsp");
 					
 				}else {
@@ -124,7 +125,7 @@ public class RecoveryPassController extends HttpServlet {
 			}
 			
 
-			doGet(request, response);
+			//doGet(request, response);
 
 		} else if (opcion.equals("CHANGE_PASS")) {
 			
