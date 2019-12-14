@@ -68,6 +68,7 @@ public class RecoveryPassController extends HttpServlet {
 			if(clave1.equals(clave2)) {
 				u.setClave(clave1);
 				uDao.update(u);
+				response.sendRedirect(request.getContextPath() + "/pages/principal.jsp");
 			}else {
 				sesion.setAttribute("error_msg", "Las claves no coinciden");
 				response.sendRedirect(request.getContextPath() + "/pages/ErrorPage.jsp");
@@ -114,12 +115,12 @@ public class RecoveryPassController extends HttpServlet {
 				if(u!=null) {
 					util.ServicioEmail sEmail = new util.ServicioEmail("jefersonurielhc@ufps.edu.co", "dvhawulugeuevjee");
 					sEmail.enviarEmail(u.getEmail(), "Egresados UFPS Recuperacion Clave", "mensaje "
-							+ "localhost:8080/egresados" + "/CambiarClaveUsuario.jsp");
+							+ "localhost:8080/egresados" + "/pages/CambiarClaveUsuario.jsp");
 					
 				}else {
 					//Usuario no existe
 					session.setAttribute("error_msg", "Usuario No Existe");
-					response.sendRedirect(request.getContextPath() + "/ErrorPage.jsp");
+					response.sendRedirect(request.getContextPath() + "/ErrorPage.jsp");System.out.println("##");
 				}
 				
 			}
