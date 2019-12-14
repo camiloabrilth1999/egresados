@@ -81,6 +81,13 @@
 				</div>
 
 				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="perfil">Perfil</label><input type="text"
+							class="form-control" name="perfil" placeholder="Tu perfil..." required>
+					</div>
+				</div>
+
+				<div class="row">
 					<div class="col-md-6">
 						<button type="submit" class="btn btn-primary">Registrate
 							ahora</button>
