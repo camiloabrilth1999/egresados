@@ -6,10 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Gimnasio</title>
-<%@include file="html/meta.html"%>
+<%@include file="../html/meta.html"%>
 <body>
-	<%@include file="html/header.html"%>
-	<%@include file="html/nav.html"%>
+	<%@include file="../html/header.html"%>
+	<%@include file="../html/nav.html"%>
 	<div class="container">
 		<div class="row padding">
 			<div class="card col-12 col-sm-6 text-center mx-auto">
@@ -27,7 +27,7 @@
 
 
 		</div>
-		<%@include file="html/footer.html"%>
+		<%@include file="../html/footer.html"%>
 	</div>
 </body>
 </html>

@@ -6,11 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Inicio de Sesion</title>
-<%@include file="html/meta.html"%>
+<%@include file="../html/meta.html"%>
 </head>
 <body>
-	<%@include file="html/header.html"%>
-	<%@include file="html/nav.html"%>
+	<%@include file="../html/header.html"%>
+	<%@include file="../html/nav.html"%>
 
 	<div class="">
 
@@ -61,6 +61,6 @@
 
 	</div>
 
-	<%@include file="html/footer.html"%>
+	<%@include file="../html/footer.html"%>
 </body>
 </html>
