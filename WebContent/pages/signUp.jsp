@@ -5,18 +5,22 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+
 <title>Registrar</title>
 <%@include file="../html/meta.html"%>
 </head>
 
 <body>
+
+	<%@include file="../html/header.html"%>
+	<%@include file="../html/nav.html"%>
 	<jsp:useBean id="ppDao" class="dao.ProgramaDao" scope="request"></jsp:useBean>
 
 
 	<div class="container">
 		<div class="card col-11 col-sm-4 mx-auto">
 			<h2 class="h4 mb-4">Registrar egresado</h2>
-			
+
 			<form action="../SignUpController" method="post">
 
 				<div class="row">

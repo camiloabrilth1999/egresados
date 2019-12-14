@@ -30,7 +30,7 @@
 					<a href="index.html" class="center brand-logo"><i
 						class="material-icons"> </i>ADMINISTRADOR</a> <a href="#"
 						data-target="mobile-demo" class="sidenav-trigger"><i
-						class="material-icons">keyboard_tab</i></a>
+						class="material-icons">book</i></a>
 
 				</div>
 			</nav>
@@ -79,6 +79,22 @@
 							<i class="material-icons prefix"></i> <label for="email">Email</label>
 							<input type="email" name="email" required>
 						</div>
+						
+						
+						
+						
+						
+						
+						<div class="input-field col s6">
+							<select name="programa" id="programa">
+								<option value="" name="programa" id="programa"disabled selected>Elija El Programa</option>
+								<c:forEach var="p" items="${ppDao.list()}">
+									<option value="${p.codigo}" name="programa" id="programa"><c:out value="${p.nombre}"/></option>
+								</c:forEach>
+							</select> <label>Escoja Programa</label>
+					</div>
+						
+
 
 						<div class="row">
 							<div class="form-group col-md-3">
@@ -89,6 +105,8 @@
 								</select>
 							</div>
 						</div>
+
+
 
 
 						<p class="center-align">
