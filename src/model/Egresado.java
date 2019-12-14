@@ -35,6 +35,17 @@ public class Egresado implements Serializable {
 
 	public Egresado() {
 	}
+	
+	public Egresado(String documento, String nombre, String telefono, String email
+			, String codigo, String clave, int programa) {
+		this.documento = documento;
+		this.nombre = nombre;
+		this.telefono = telefono;
+		this.email = email;
+		this.codigo = codigo;
+		this.clave = clave;
+		this.programa = programa;
+	}
 
 	public int getId() {
 		return this.id;
