@@ -17,7 +17,7 @@
 
 
 			<div class="card col-11 col-sm-4 margin mx-auto">
-				<form action="../RecoveryPassController" method="get">
+				<form action="../RecoveryPassController" method="post">
 					<fieldset>
 						<legend>Nueva Clave</legend>
 						<div class="form-group">

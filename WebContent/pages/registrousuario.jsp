@@ -22,7 +22,7 @@
 </head>
 
 <body>
-	<jsp:useBean id="pgDao" class="dao.ProgramaDao" scope="request"></jsp:useBean>
+	<jsp:useBean id="ppDao" class="dao.ProgramaDao" scope="request"></jsp:useBean>
 	<header>
 		<div class="navbar-fixed">
 			<nav>
@@ -88,7 +88,7 @@
 						<div class="input-field col s6">
 							<select name="programa" id="programa">
 								<option value="" name="programa" id="programa"disabled selected>Elija El Programa</option>
-								<c:forEach var="p" items="${pgDao.list()}">
+								<c:forEach var="p" items="${ppDao.list()}">
 									<option value="${p.codigo}" name="programa" id="programa"><c:out value="${p.nombre}"/></option>
 								</c:forEach>
 							</select> <label>Escoja Programa</label>
@@ -96,7 +96,15 @@
 						
 
 
-						
+						<div class="row">
+							<div class="form-group col-md-3">
+								<label for="programa">Programa</label> <select name="programa"><br>
+									<c:forEach var="p" items="${ppDao.list()}">
+										<option value="${p.codigo}">${p.nombre}</option>
+									</c:forEach>
+								</select>
+							</div>
+						</div>
 
 
 

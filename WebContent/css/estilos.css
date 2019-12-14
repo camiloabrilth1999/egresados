@@ -9,6 +9,9 @@ body{
 h2{
 	color: white;
 }
+.red-custom{
+	background-color: #aa1916;
+}
 .padding{
 	padding:10px;background-color: transparent;
 }
