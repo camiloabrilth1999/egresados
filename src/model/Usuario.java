@@ -23,6 +23,8 @@ public class Usuario implements Serializable {
 	private String nombre;
 
 	private int programa;
+	
+	private int validacion;
 
 	public Usuario() {
 	}
@@ -66,5 +68,14 @@ public class Usuario implements Serializable {
 	public void setPrograma(int programa) {
 		this.programa = programa;
 	}
+
+	public int getValidacion() {
+		return validacion;
+	}
+
+	public void setValidacion(int validacion) {
+		this.validacion = validacion;
+	}
+	
 
 }
