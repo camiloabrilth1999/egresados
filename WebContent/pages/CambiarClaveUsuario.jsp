@@ -17,39 +17,34 @@
 
 
 			<div class="card col-11 col-sm-4 margin mx-auto">
-				<form action="../RecoveryPassController" method="post">
+				<form action="../RecoveryPassController" method="get">
 					<fieldset>
-						<legend>Ingresa Tu Usuario</legend>
-
+						<legend>Nueva Clave</legend>
 						<div class="form-group">
 							<input class="col" type="text" name="codigo"
 								placeholder="Codigo Usuario" required />
 						</div>
-						<div class="form-group mb-2">
-					<div class="btn-group  mb-3">
-						<label class="btn btn-white"> <input
-							type="radio" name="tipo_usuario" autocomplete="off"
-							value="EGRESADO" checked> EGRESADO
-						</label> <label class="btn btn-white"> <input
-							type="radio" name="tipo_usuario" autocomplete="off"
-							value="ADMINISTRADOR"> ADMINISTRADOR
-						</label>
-					</div>
-				</div>
+						<div class="form-group">
+							<input class="col" type="password" name="clave1"
+								placeholder="Nueva Clave" required />
+						</div>
+						<div class="form-group">
+							<input class="col" type="password" name="clave2"
+								placeholder="Confirma Nueva clave" required />
+						</div>
 
 
 						<div class="form-group">
 							<button class="btn btn-info btn-sm col-md-12" type="submit">Guardar</button>
 						</div>
 
-						<input type="hidden" value="RECOVERY_PASS" name="opcion">
+						<input type="hidden" value="CHANGE_PASS" name="opcion">
+						<input type="hidden" value="USUARIO" name="tipo_usuario">
 					</fieldset>
 				</form>
 
 
 			</div>
-
-
 
 
 

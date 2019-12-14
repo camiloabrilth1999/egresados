@@ -3,7 +3,8 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-	<persistence-unit name="egresados" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="egresados"
+		transaction-type="RESOURCE_LOCAL">
 		<class>model.Egresado</class>
 		<class>model.Estudio</class>
 		<class>model.Experiencia</class>
@@ -12,11 +13,10 @@
 		<class>model.Usuario</class>
 		<properties>
 			<!-- Configuring JDBC properties -->
-			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/egresados" />
-			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.driver"
-				value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"	value="jdbc:mysql://54.174.153.103:3306/egresados?serverTimezone=UTC" />
+			<property name="javax.persistence.jdbc.user" value="user" />
+			<property name="javax.persistence.jdbc.password" value="1234" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 
 			<!-- Hibernate properties -->
 			<property name="hibernate.show_sql" value="true" />

@@ -26,16 +26,16 @@
 					placeholder="Clave" required />
 				<div class="form-group mb-2">
 					<div class="btn-group  mb-3">
-						<label class="btn btn-white"> <input
-							type="radio" name="tipo_usuario" autocomplete="off"
-							value="EGRESADO" checked> EGRESADO
-						</label> <label class="btn btn-white"> <input
-							type="radio" name="tipo_usuario" autocomplete="off"
-							value="ADMINISTRADOR"> ADMINISTRADOR
+						<label class="btn btn-white"> <input type="radio"
+							name="tipo_usuario" autocomplete="off" value="EGRESADO" checked>
+							EGRESADO
+						</label> <label class="btn btn-white"> <input type="radio"
+							name="tipo_usuario" autocomplete="off" value="ADMINISTRADOR">
+							ADMINISTRADOR
 						</label>
 					</div>
 				</div>
-			<c:if test="${fail_login!=null}">
+				<c:if test="${fail_login!=null}">
 
 					<label class="text-danger"><c:out value="${fail_login}"></c:out></label>
 				</c:if>
@@ -44,6 +44,14 @@
 					<div>
 						<!-- Forgot password -->
 						<a href="RecoveryPass.jsp">Olvidaste tu contraseña?</a>
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-around">
+
+					<div>
+						<!-- Forgot password -->
+						<a href="signUp.jsp">¿No tienes cuenta? Registrate ahora</a>
 					</div>
 				</div>
 				<!-- Sign in button -->
