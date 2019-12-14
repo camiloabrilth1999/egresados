@@ -24,8 +24,7 @@
         <div class="navbar-fixed">
             <nav class="indigo darken-4" role="navigation">
                 <div class="nav-wrapper container">
-                    <a href="index.jsp" class="brand-logo center truncate"><i class="material-icons">hotel</i>Jack's
-                        Nana</a>
+                    <a href="index.jsp" class="brand-logo center truncate"><i class="material-icons">book</i>Egresados</a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="pages/login.jsp" class="waves-effect waves-light btn indigo darken-3">LOG IN <i
                                     class="material-icons right">supervised_user_circle
@@ -38,12 +37,7 @@
                 </div>
             </nav>
         </div>
-        <ul class="sidenav indigo lighten-5" id="mobile-demo">
-            <li><a class="waves-effect sidenav-close" href="#fondo">Interiores de lujo</a></li>
-            <li><a class="waves-effect sidenav-close" href="#second-banner">Servicios</a></li>
-            <li><a class="waves-effect sidenav-close" href="#fondo2">Las ciudades</a></li>
-            <li><a class="waves-effect sidenav-close" href="#pie">Find us</a></li>
-        </ul>
+        
     </header>
 
     <!--BANNER PRINCIPAL-->
@@ -58,78 +52,24 @@
             <br><br><br><br><br><br><br>
         </div>
     </div>
-
-    <!--RELLENO DE CARDS-->
-    <div class="container" id="fondo">
+    
+    <!--RELLENO DE CAROUSEL-->
+    <div class="container" id="fondo2">
         <div class="section">
-            <h2 class="center-align">INTERIORES DE LUJO</h2>
-
+            <h2 class="center-align">EN NUESTRAS CIUDADES</h2>
             <!--CONTENIDO PROMOCIONAL-->
             <div class="row">
-                <div class="col s12 m6 l4">
-                    <div class="card indigo lighten-4">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="resources/tradicion.jpg" height="400">
-                        </div>
-                        <div class="card-content indigo lighten-4">
-                            <span class="card-title activator grey-text text-darken-4">Tradicion<i
-                                    class="material-icons right">keyboard_arrow_up</i></span>
-
-                        </div>
-                        <div class="card-reveal indigo lighten-4">
-                            <span class="card-title grey-text text-darken-4">Tradicion<i
-                                    class="material-icons right">keyboard_arrow_down
-                                </i></span>
-                            <p class="flow-text">Queremos mostrar el conocimiento adquirido a tra vez de la materia que nos ayudara en nuestra vida laboral.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l4">
-                    <div class="card indigo lighten-4">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="resources/familiaridad.jpg" height="400">
-                        </div>
-                        <div class="card-content indigo lighten-4">
-                            <span class="card-title activator grey-text text-darken-4">Confianza<i
-                                    class="material-icons right">keyboard_arrow_up</i></span>
-
-                        </div>
-                        <div class="card-reveal indigo lighten-4">
-                            <span class="card-title grey-text text-darken-4">Confianza<i
-                                    class="material-icons right">keyboard_arrow_down
-                                </i></span>
-                            <p class="flow-text">Aunque actualmente la tecnología ha permitido personalizar diferentes
-                                servicios en nuestros hoteles, el cliente sigue priorizando la atención, la amabilidad,
-                                la confianza y empatía que brinda un hotel a través de su personal.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l4">
-                    <div class="card indigo lighten-4">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="resources/moderno.jpg" height="400">
-                        </div>
-                        <div class="card-content indigo lighten-4">
-                            <span class="card-title activator grey-text text-darken-4">Diversidad<i
-                                    class="material-icons right">keyboard_arrow_up</i></span>
-
-                        </div>
-                        <div class="card-reveal indigo lighten-4">
-                            <span class="card-title grey-text text-darken-4">Diversidad<i
-                                    class="material-icons right">keyboard_arrow_down
-                                </i></span>
-                            <p class="flow-text">Se aplicó el cuestionario de valores culturales a gerentes generales
-                                extranjeros y a sus directivos de área con el fin de indagar las diferencias y
-                                similitudes culturales. Los resultados muestran que los gerentes extranjeros tienen un
-                                mayor índice de Distancia con el Poder y Rechazo a la incertidumbre con respecto a sus
-                                directivos nacionales.
-                            </p>
-                        </div>
-                    </div>
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="https://ufpso.edu.co/images/proceso_admision/proceso_admision_imagen1.jpg" width="300"
+                            height="300"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://ufpso.edu.co/images/identidadcorporativa/logoVertical.png" width="300"
+                            height="300"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://ufpso.edu.co/images/galeria_fotografica/92_29042014V2/imagenes/92-7-29414.jpg" width="300"
+                            height="300"></a>
+                    <a class="carousel-item" href="#four!"><img src="http://4.bp.blogspot.com/--tVyuvObEz0/VPhtdl1B_II/AAAAAAAAAlc/ggNqUIZ7_Gg/s1600/Ascensor.JPG" width="300"
+                            height="300"></a>
+                    <a class="carousel-item" href="#five!"><img src="https://2.bp.blogspot.com/-h97Sc0_AQ0E/V8IY48ehBlI/AAAAAAAAP9w/keG9MedqdJ8ZKaPha4IAyKziiOwqlLuFwCLcB/s1600/UFPS8.jpg" width="300"
+                            height="300"></a>
                 </div>
             </div>
 
@@ -137,43 +77,23 @@
         <br><br>
     </div>
 
+
+
     <!--BANNER SECUNDARIO-->
     <div class="section no-pad-bot" id="second-banner">
         <div class="container">
             <<br><br><br><br><br>
-                <h1 class="header center white-text">DISFRUTA DE NUESTROS SERVICIOS A LA HABITACION</h1>
+                <h1 class="header center white-text">COMPARTE TU EXPERIENCIA LABORAL CON LOS EGRESADOS</h1>
                 <div class="row center">
                     <h5 class="header col s12 light white-text">
-                        Amenidades, Cortinas Black Out, Enchufes eléctricos de fácil acceso, Caja de Seguridad, entre
-                        otros.</h5>
+                        Oportunidades Laborales y de conseguir profesionales capaces que hacen parte de nuestra Alma Mater</h5>
                 </div>
                 <br><br><br><br><br>
         </div>
     </div>
 
     <!--RELLENO DE CAROUSEL-->
-    <div class="container" id="fondo2">
-        <div class="section">
-            <h2 class="center-align">EN LAS PRESTIGIOSAS CIUDADES</h2>
-            <!--CONTENIDO PROMOCIONAL-->
-            <div class="row">
-                <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/400/400/city/1" width="300"
-                            height="300"></a>
-                    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/400/400/city/2" width="300"
-                            height="300"></a>
-                    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/400/400/city/3" width="300"
-                            height="300"></a>
-                    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/400/400/city/4" width="300"
-                            height="300"></a>
-                    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/400/400/city/5" width="300"
-                            height="300"></a>
-                </div>
-            </div>
-
-        </div>
-        <br><br>
-    </div>
+    
 
     <!--PIE DE PAGINA-->
     <footer class="page-footer indigo darken-4" id="pie">
@@ -194,7 +114,7 @@
                 <div class="col l6 s12">
                     <div class="map-responsive">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3951.961141116452!2d-72.49104063515404!3d7.899128757833809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8e6645102f9b7269%3A0xab4b03ed6c85830e!2sUniversidad%20Francisco%20de%20Paula%20Santander%2C%20Norte%20de%20Santander!3m2!1d7.898878!2d-72.4884979!4m5!1s0x8e664511f04eac01%3A0x29d82b4e7862808e!2sEscuela%20Superior%20De%20Administraci%C3%B3n%20P%C3%BAblica%2C%20Calle%202%2C%20C%C3%BAcuta%2C%20Norte%20de%20Santander!3m2!1d7.8996357999999995!2d-72.4892497!5e0!3m2!1ses-419!2sco!4v1575238527904!5m2!1ses-419!2sco"
+                            src="www.divisist.ufps.edu.co"
                             width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -202,7 +122,6 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="gray-text text-lighten-3" href="https://github.com/JesusRed">Jarv © </a>
                 <a class="grey-text text-lighten-3 right" href="https://instagram.com/?hl=es-la">| Instagram ||</a>
                 <a class="grey-text text-lighten-3 right" href="https://twitter.com">| Twitter |</a>
                 <a class="grey-text text-lighten-3 right" href="https://www.tripadvisor.co/">| TripAdvisor |</a>
