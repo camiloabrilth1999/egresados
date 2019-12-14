@@ -74,7 +74,7 @@ public class SignUpController extends HttpServlet {
 			egdao.insert(egresado);
 			response.getWriter().append("Se ha registrado correctamente");
 			//request.getRequestDispatcher("index.jsp").forward(request, response);
-			response.sendRedirect(request.getContextPath() + "/principal.jsp");
+			response.sendRedirect(request.getContextPath() + "/index.jsp");
 		} else {
 			response.getWriter().append("El egresado ya existe.");
 			request.getRequestDispatcher("").forward(request, response);
