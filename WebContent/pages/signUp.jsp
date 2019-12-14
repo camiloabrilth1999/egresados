@@ -91,6 +91,8 @@
 
 		</div>
 
+		<%@include file="../html/footer.html"%>
 	</div>
+
 </body>
 </html>
