@@ -59,13 +59,14 @@ public class SignUpController extends HttpServlet {
 		String codigo = request.getParameter("codigo");
 		String clave = request.getParameter("clave");
 		String programa = request.getParameter("programa");
+		String perfil = request.getParameter("perfil");
 		
 		ProgramaDao pdao = new ProgramaDao();
 		
 		Programa prog = pdao.find(Integer.parseInt(programa));		
 		
 		Egresado egresado = new Egresado(documento, nombre, telefono, email,
-				codigo, clave, prog.getCodigo());
+				codigo, clave, prog.getCodigo(), perfil);
 		
 		EgresadoDao egdao = new EgresadoDao();
 		Egresado e = egdao.find(egresado.getId());
@@ -74,7 +75,7 @@ public class SignUpController extends HttpServlet {
 			egdao.insert(egresado);
 			response.getWriter().append("Se ha registrado correctamente");
 			//request.getRequestDispatcher("index.jsp").forward(request, response);
-			response.sendRedirect(request.getContextPath() + "/principal.jsp");
+			response.sendRedirect(request.getContextPath() + "/index.jsp");
 		} else {
 			response.getWriter().append("El egresado ya existe.");
 			request.getRequestDispatcher("").forward(request, response);
