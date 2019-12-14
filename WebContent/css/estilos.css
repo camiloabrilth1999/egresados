@@ -1,0 +1,42 @@
+body{
+/*
+	background-image: url("../img/mnas.jpg");
+	background-color: transparent;
+	background-repeat: repeat-y;
+	color:white;
+*/
+}
+h2{
+	color: white;
+}
+.padding{
+	padding:10px;background-color: transparent;
+}
+
+table{	
+	background-color: transparent !important;
+}
+.margin{
+	margin-right:10px;
+}
+
+.card{
+	background-color: transparent !important;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.card-img-own{
+	width: 15rem;
+}
+
+ppppp{
+	color:red;
+
+}
+
+footer{
+	color: #fff; min-height: 100px; padding: 65px; width: 100%;
+}
+footer p{
+	 font-size: 1.8rem;
+}
