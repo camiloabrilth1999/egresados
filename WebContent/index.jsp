@@ -27,7 +27,7 @@
                     <a href="index.jsp" class="brand-logo center truncate"><i class="material-icons">hotel</i>Jack's
                         Nana</a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="paginas/login.jsp" class="waves-effect waves-light btn indigo darken-3">LOG IN <i
+                        <li><a href="pages/login.jsp" class="waves-effect waves-light btn indigo darken-3">LOG IN <i
                                     class="material-icons right">supervised_user_circle
                                 </i></a></li>
                     </ul>
@@ -53,7 +53,7 @@
             <h1 class="header center white-text">EGRESADOS UFPS</h1>
             <div class="row center">
                 <h5 class="header col s12 light white-text">
-                    A modern calm but with a retro love</h5>
+                    Un sitio Compartir la Experiencia Laboral Para los Egresados de la UFPS</h5>
             </div>
             <br><br><br><br><br><br><br>
         </div>
