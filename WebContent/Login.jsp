@@ -28,7 +28,7 @@
 					<div class="btn-group  mb-3">
 						<label class="btn btn-white"> <input
 							type="radio" name="tipo_usuario" autocomplete="off"
-							value="EGRESADO"> EGRESADO
+							value="EGRESADO" checked> EGRESADO
 						</label> <label class="btn btn-white"> <input
 							type="radio" name="tipo_usuario" autocomplete="off"
 							value="ADMINISTRADOR"> ADMINISTRADOR
