@@ -85,6 +85,8 @@ public class LoginController extends HttpServlet {
 					
 				}
 			}else {
+				//usuario no existe
+				session.setAttribute("fail_login", "Usuario no Existe");
 				response.sendRedirect(request.getContextPath() + "/Login.jsp");
 			}
 			
