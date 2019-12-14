@@ -92,6 +92,8 @@
 			</div>
 
 		</form>
+		
+		<%@include file="../html/footer.html"%>
 	</div>
 </body>
 </html>
