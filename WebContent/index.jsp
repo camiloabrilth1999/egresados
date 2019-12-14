@@ -100,33 +100,20 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12 center-align">
-                    <h5 class="white-text">JACKS'S NANA | HOTEL & RESORT</h5>
-                    <p class="grey-text text-lighten-4">Contamos con seis hoteles y dos resort, cada una con 72
-                        habitaciones cómodamente equipadas, incluyendo dos suites: La Suite Presidente y la Suite
-                        Ambassador con más de cien metros de superficie, que seguramente sorprenderán incluso a los
-                        huéspedes más exigentes. Disponemos de 7 salas, donde llevamos ya 15 años preparando reuniones
-                        familiares y de negocios.
+                    <h5 class="white-text">EGRESADOS UFPS</h5>
+                    <p class="grey-text text-lighten-4">
+                    Ofrecemos la mejor experiencia de navegabilidad en la pagina
                         <br>
-                        JACKS'S NANA no es sólo el edificio sino, sobre todo, su gente. Somos un equipo de
-                        profesionales, que podemos organizar todos los eventos de principio a fin.</p>
+                        
 
                 </div>
                 <div class="col l6 s12">
                     <div class="map-responsive">
                         <iframe
-                            src="www.divisist.ufps.edu.co"
+                            src="https://ww2.ufps.edu.co/"
                             width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <a class="grey-text text-lighten-3 right" href="https://instagram.com/?hl=es-la">| Instagram ||</a>
-                <a class="grey-text text-lighten-3 right" href="https://twitter.com">| Twitter |</a>
-                <a class="grey-text text-lighten-3 right" href="https://www.tripadvisor.co/">| TripAdvisor |</a>
-                <a class="grey-text text-lighten-3 right" href="https://www.youtube.com/feed/subscriptions">|| YouTube
-                    |</a>
             </div>
         </div>
     </footer>
