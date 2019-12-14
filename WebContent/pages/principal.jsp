@@ -47,9 +47,9 @@
             </div>
         </li>
         <li><a class="subheader">Personas</a></li>
-        <li><a class="waves-effect" href="../pages/registrarempleado.jsp"><i class="material-icons">person_add</i>Registrar
+        <li><a class="waves-effect" href="../pages/signUp.jsp"><i class="material-icons">person_add</i>Registrar
                 Egresado</a></li>
-        <li><a class="waves-effect" href="../pages/registrarcliente.jsp"><i class="material-icons">person_add</i>Listar Egresados</a>
+        <li><a class="waves-effect" href="../pages/listaegresados.jsp"><i class="material-icons">person_add</i>Listar Egresados</a>
         </li>
         <li>
             <div class="divider"></div>

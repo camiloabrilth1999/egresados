@@ -6,7 +6,6 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-</head>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
@@ -17,7 +16,12 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	crossorigin="anonymous">
+</head>
+
 <body>
+
+<%@include file="../html/header.html" %>
+<%@include file="../html/nav.html" %>
 	<jsp:useBean id="ppDao" class="dao.ProgramaDao" scope="request"></jsp:useBean>
 
 	<div class="container">
