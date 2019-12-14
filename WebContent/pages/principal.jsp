@@ -1,7 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+<c:if test="${egresado == null && admin == null}">
+	<c:set var="error_msg" value="Usuario No Autorizado" scope="session"></c:set>
+	<script type="text/javascript">
+		document.location = "ErrorPage.jsp";
+	</script>
+</c:if>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +75,7 @@
             <div class="divider"></div>
         </li>
         <br><br>
-        <li><a class="waves-effect red-text" href="../index.jsp"><i
+        <li><a class="waves-effect red-text" href="../CerrarSesionController"><i
                     class="material-icons red-text">exit_to_app</i>Salir</a></li>
     </ul>
 

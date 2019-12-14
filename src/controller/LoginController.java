@@ -57,12 +57,12 @@ public class LoginController extends HttpServlet {
 				}else {
 					//clave incorrecta
 					session.setAttribute("fail_login", "Usuario o Clave Incorrecta");
-					response.sendRedirect(request.getContextPath() + "/Login.jsp");
+					response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
 				}
 			}else {
 				//usuario no existe
 				session.setAttribute("fail_login", "Usuario no Existe");
-				response.sendRedirect(request.getContextPath() + "/Login.jsp");
+				response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
 			}
 			
 		}else if(tipoUsuario.equals("ADMINISTRADOR")) {
@@ -77,17 +77,17 @@ public class LoginController extends HttpServlet {
 						throw new ExceptionInvalidUser("Usuario o Clave Incorrecta");
 					}
 					session.setAttribute("admin", u);
-					response.sendRedirect(request.getContextPath() + "/principal.jsp");
+					response.sendRedirect(request.getContextPath() + "/pages/principal.jsp");
 				} catch (ExceptionInvalidUser e) {
 					//clave incorrecta
 					session.setAttribute("fail_login", "Usuario o Clave Incorrecta");
-					response.sendRedirect(request.getContextPath() + "/Login.jsp");
+					response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
 					
 				}
 			}else {
 				//usuario no existe
 				session.setAttribute("fail_login", "Usuario no Existe");
-				response.sendRedirect(request.getContextPath() + "/Login.jsp");
+				response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
 			}
 			
 		}else {
