@@ -16,7 +16,7 @@
 
 		<div class="card col-11 col-sm-4 mx-auto">
 			<!-- Default form login -->
-			<form class="text-center p-5" method="post" action="LoginController">
+			<form class="text-center p-5" method="post" action="../LoginController">
 				<h2 class="h4 mb-4">Iniciar Sesion</h2>
 				<!-- Email -->
 				<input type="text" name="id" class="form-control mb-4 col-sm"
