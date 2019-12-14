@@ -22,11 +22,11 @@
     <!--ENCABEZADO-->
     <header>
         <div class="navbar-fixed">
-            <nav class="red-custom" role="navigation">
+            <nav class="red darken-3" role="navigation">
                 <div class="nav-wrapper container">
                     <a href="index.jsp" class="brand-logo center truncate"><i class="material-icons">book</i>Egresados</a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="pages/login.jsp" class="waves-effect waves-light btn red darken-3">LOG IN <i
+                        <li><a href="pages/login.jsp" class="waves-effect waves-light btn red darken-1">LOG IN <i
                                     class="material-icons right">supervised_user_circle
                                 </i></a></li>
                     </ul>
@@ -96,7 +96,7 @@
     
 
     <!--PIE DE PAGINA-->
-    <footer class="page-footer red-custom darken-4" id="pie">
+    <footer class="page-footer red darken-3" id="pie">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12 center-align">
