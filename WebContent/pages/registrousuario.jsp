@@ -22,7 +22,7 @@
 </head>
 
 <body>
-	<jsp:useBean id="tcDao" class="model.Programa" scope="request"></jsp:useBean>
+	<jsp:useBean id="pgDao" class="dao.ProgramaDao" scope="request"></jsp:useBean>
 	<header>
 		<div class="navbar-fixed">
 			<nav>
@@ -30,7 +30,7 @@
 					<a href="index.html" class="center brand-logo"><i
 						class="material-icons"> </i>ADMINISTRADOR</a> <a href="#"
 						data-target="mobile-demo" class="sidenav-trigger"><i
-						class="material-icons">keyboard_tab</i></a>
+						class="material-icons">book</i></a>
 
 				</div>
 			</nav>
@@ -61,15 +61,13 @@
 						action="RegistrarUsuarioController" runat="server">
 
 						<div class="input-field">
-							<i class="material-icons prefix"></i> <label
-								for="usuario">Ususario</label> <input type="text" name="usuario"
-								required>
+							<i class="material-icons prefix"></i> <label for="usuario">Ususario</label>
+							<input type="text" name="usuario" required>
 						</div>
 
 						<div class="input-field">
-							<i class="material-icons prefix"></i> <label
-								for="nombre">Nombre</label> <input type="text" name="nombre"
-								required>
+							<i class="material-icons prefix"></i> <label for="nombre">Nombre</label>
+							<input type="text" name="nombre" required>
 						</div>
 
 						<div class="input-field">
@@ -81,8 +79,26 @@
 							<i class="material-icons prefix"></i> <label for="email">Email</label>
 							<input type="email" name="email" required>
 						</div>
+						
+						
+						
+						
+						
+						
+						<div class="input-field col s6">
+							<select name="programa" id="programa">
+								<option value="" name="programa" id="programa"disabled selected>Elija El Programa</option>
+								<c:forEach var="p" items="${pgDao.list()}">
+									<option value="${p.codigo}" name="programa" id="programa"><c:out value="${p.nombre}"/></option>
+								</c:forEach>
+							</select> <label>Escoja Programa</label>
+					</div>
+						
+
 
 						
+
+
 
 
 						<p class="center-align">
@@ -94,11 +110,11 @@
 
 					</form>
 					<p class="center-align">
-							<button class="waves-effect waves-light btn teal darken-4"
-								type="submit">
-								<i class="material-icons left">arrow_back</i>VOLVER
-							</button>
-						</p>
+						<button class="waves-effect waves-light btn teal darken-4"
+							type="submit">
+							<i class="material-icons left">arrow_back</i>VOLVER
+						</button>
+					</p>
 
 				</article>
 			</div>
